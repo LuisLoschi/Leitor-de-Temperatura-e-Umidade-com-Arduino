@@ -11,6 +11,7 @@
 - [Tecnologias e Ferramentas](#technologies)
 - [Montagem do circuito](#circuit)
 - [Como rodar a aplicação](#project)
+- [Resultados](#result)
 
 <br/>
 
@@ -35,6 +36,7 @@ OBS: O arduino vai fazer a leitura dos dados enviados no ThingSpeak através de 
 - Pyfirmata;
 - Plataforma ThingSpeak;
 - IDE Arduino;
+- Visual Studio Code;
 
 <br />
 
@@ -46,9 +48,11 @@ Para a montagem foram utilizados:
   - Protoboard;
   - 6 Leds (2 vermelhos, 2 amarelos e 2 verdes);
   - 6 resistores de 220 ohms;
-  
-<img src="" alt="Montagem do circuito" />
 
+<p align="center">
+  <img src="img/Projeto_ioT.png" alt="Montagem do circuito" />
+</p>
+  
 <br />
 
 <a name="project"></a>
@@ -74,7 +78,7 @@ pip install requests
 
 4. Crie uma conta na plataforma ThingSpeak: https://thingspeak.com/ e depois siga o tutorial a seguir para criar um canal onde a aplicação vai rodar:
 
-<img src="" alt="gif com tutorial de como criar um canal no thingspeak" />
+<img src="img/criar_canal.gif" alt="gif com tutorial de como criar um canal no thingspeak" />
 
 ### Colocando em prática
 
@@ -88,18 +92,38 @@ git clone https://github.com/LuisLoschi/Leitor-de-Temperatura-e-Umidade-com-Ardu
 
 3. Abra a IDE do arduino e siga estes passos:
     - Localizar qual porta USB está o Arduino na IDE;
+    <br />
+    <p align="center" >
+      <img src="img/porta_usb.gif" alt="gif mostrando a localização da porta usb" />
+    </p>
+    
     - Rodar o protocolo pyFirmata para que o Arduino possa receber os códigos python;
-
-4. Agora entre na pasta clonada e abra o código na IDE como um novo arquivo, e faça os seguintes ajustes:
+    <br />
+    <p align="center" >
+      <img height=400 src="img/pyfirmata.gif" alt="Rodando pyfirmata" />
+    </p>
+4. Agora entre na pasta clonada e abra o código na IDE do VScode, e faça os seguintes ajustes:
     - Especificar qual a porta USB está o Arduino;
     - Copiar a chave(API KEY) do seu canal criado no ThingSpeak;
+    
+    <img src="img/Keys.png" alt="keys da plataforma thingspeak" />
 
+<a name="result"></a>
 ## Resultados 🚀
 
-<img src="" alt="Gráficos ThingSpeak" />
+- Gráficos
+<div >
+  <img height=250 src="img/graficos.png" alt="Gráficos ThingSpeak" />
+</div>
 
-<img src="" alt="Montagem" />
 
+- Circuito ligado
+<div >
+  <img height=400 src="img/leds.gif" alt="Montagem" />
+</div>
+  
+<hr />  
+  
 <p>
   Pronto ! Agora temos uma aplicação IoT rodando em tempo real, enviando dados e fazendo sua leitura e demonstrando através dos leds se a temperatura e a úmidade estão dentro dos   padrões especificados 🎉
 </p>
