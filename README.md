@@ -92,19 +92,24 @@ git clone https://github.com/LuisLoschi/Leitor-de-Temperatura-e-Umidade-com-Ardu
 
 3. Abra a IDE do arduino e siga estes passos:
     - Localizar qual porta USB está o Arduino na IDE;
-    <br />
     <p align="center" >
       <img src="img/porta_usb.gif" alt="gif mostrando a localização da porta usb" />
     </p>
     
-    - Rodar o protocolo pyFirmata para que o Arduino possa receber os códigos python;
     <br />
+    
+    - Rodar o protocolo pyFirmata para que o Arduino possa receber os códigos python;
     <p align="center" >
       <img height=400 src="img/pyfirmata.gif" alt="Rodando pyfirmata" />
     </p>
+    
 4. Agora entre na pasta clonada e abra o código na IDE do VScode, e faça os seguintes ajustes:
     - Especificar qual a porta USB está o Arduino;
-    - Copiar a chave(API KEY) do seu canal criado no ThingSpeak;
+    - Copiar ID do canal;
+    
+    <img src="img/canal_id.png" alt="chave do canal" />
+    
+    - Copiar a chave (API KEY) do seu canal criado no ThingSpeak;
     
     <img src="img/Keys.png" alt="keys da plataforma thingspeak" />
 
