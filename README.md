@@ -20,7 +20,7 @@
 ## Resumo do projeto 📝
 
 <p> 
-Projeto tem como objetivo enviar dados de temperatura e de umidade para a plataforma IoT - <a href="https://thingspeak.com/">ThingSpeak</a> - e fazer a leitura desses dados em tempo real através do Arduino com o protocolo pyFirmata. Além disso, foi montado um circuito de leds que demosntram a seguinte leitura:
+Projeto tem como objetivo enviar dados de temperatura e de umidade para a plataforma IoT - <a href="https://thingspeak.com/">ThingSpeak</a> - e fazer a leitura desses dados em tempo real através do Arduino com o protocolo pyFirmata. Além disso, foi montado um circuito de leds que demonstram a seguinte leitura:
   
 - Temperatura entre 0° C a 15°C, acende LED verde no Arduino; Acima de 15°C até 30°C, acende LED amarelo; Acima de 30°C, acende LED vermelho.
 - Umidade entre 0% a 50%, acende LED vermelho no Arduino; Acima de 50% até 75%, acende LED amarelo; Acima de 75%, acende LED verde.
@@ -82,7 +82,7 @@ pip install requests
 
 ### Colocando em prática
 
-Feito estas configurações e tendo montado o circuito, é hora de por o projeto em prática:
+Feito estas configurações e tendo montado o circuito, é hora de pôr o projeto em prática:
 
 1. No seu terminal, clone o projeto:
 ```
@@ -130,7 +130,7 @@ git clone https://github.com/LuisLoschi/Leitor-de-Temperatura-e-Umidade-com-Ardu
 <hr />  
   
 <p>
-  Pronto ! Agora temos uma aplicação IoT rodando em tempo real, enviando dados e fazendo sua leitura e demonstrando através dos leds se a temperatura e a úmidade estão dentro dos   padrões especificados 🎉
+  Pronto ! Agora temos uma aplicação IoT rodando em tempo real, enviando dados e fazendo sua leitura e demonstrando através dos leds se a temperatura e a umidade estão dentro dos   padrões especificados 🎉
 </p>
 
 <br />
